@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento a entregar</title>
+    <link rel="stylesheet" href="../Css/Styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="top">
+        <div class="lacueva_top_menu">
+        <div class="lacueva_subheader">
+            <div class="social">
+            <a href="https://www.instagram.com/ramirotrebino/">
+                <img
+                    src="../Assets/Image/instagram_gradient.png"
+                    alt="Instagram Icon" class="icon"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCtlSLjg6lhYnHEQ7LMuTTSA">
+                <img src="../Assets/Image/youtube_red.png" alt="Youtube Icon" class="icon"/>
+                </a>
+                <a href="https://www.twitch.tv/shypp0">
+                <img src="../Assets/Image/twitch_purple.png" alt="Twitch Icon" class="icon"/>
+                </a>
+                <a href="https://discord.com/invite/F9FSHsFM">
+                <img src="../Assets/Image/discord_blue.png" alt="Discord Icon" class="icon"/>
+                </a>
+            </div>
+        </div>
+        <div class="lacueva_header">
+            <div class="logo">
+                <h1>
+                    <a href="../index.html" class="logo_nombre">
+                    <span>La cueva de Shyppo</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+    <div class="main_contacto">
+        <h2 class="titulo-formulario">Formulario de contacto</h2>
+        <form action="" class="contacto">
+            <label for="nombre-usuario" class="contacto-label">Nombre y apellido</label>
+            <input type="text" id="nombre-usuario" placeholder="Ej: Lionel Andres Messi" required>
+
+            <label for="email" class="contacto-label">Email</label>
+            <input type="email" id="email" placeholder="Ej: LioMessi10@hotmail.com" required>
+
+            <label for="motivo" class="contacto-label">Motivo de tu contacto</label>
+            <textarea name="motivo" id="motivo" cols="5" rows="10"></textarea>
+        
+            <div>
+                <label for="">¿Aceptas nuestros terminos y condiciones?</label>
+                <input type="checkbox" value="acepta-terminos">
+            </div>
+
+            <div class="recibir-noticias">
+                <span for="" class="titulo-recibir_noticias">¿Queres recibir noticias?</span>
+                <div class="botones">
+                    <div class="boton-si">
+                        <label for="">Si</label>
+                        <input type="radio" name="noticias" value="noticias-si">
+                    </div>
+                        <div div class="boton-no">
+                            <label for="">No</label>
+                            <input type="radio" name="noticias" value="noticias-no">
+                    </div>
+                </div>
+            </div>
+        <input type="submit" value="Enviar formulario">
+        </form>
+    </div>
+
+    
+</body>
+</html>

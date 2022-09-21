@@ -1,0 +1,457 @@
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+/* COMIENZO DE INDEX */
+
+/* Header */
+
+.lacueva_top_menu{
+    background-color: #202020;
+    border: #111111 solid 2px bottom;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+.lacueva_subheader {
+    background-color: #111111;
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+.social .icon{
+    width: 25px;
+    height: 25px;
+    margin: 0 7px;
+}
+.lacueva_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+}
+.logo{
+    width: 500px;
+    height: 70px;
+    background-color: rgb(53, 53, 53);
+    border: #111111 solid 4px;
+    display: flex;
+    justify-content: center;
+}
+.logo_nombre{
+    color: rgb(69, 156, 228);
+    font-size: 3rem;
+}
+/* Fin del Header */
+
+/* Comienzo del Main */
+
+.elcampito{
+    margin-top: 110px;
+    background-color: rgb(4, 1, 43);
+    height: 950px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "foto1 titulo titulo foto2"
+    "foto1 esdla esdla foto2"
+    "foto1 esdla esdla foto2"
+    "foto1 esdla esdla foto2";
+}
+
+/* Fotos */
+
+.fotito{
+    grid-area: foto1;
+}
+.fotito_foto{
+    width: 387px;
+    height: 950px;
+}
+.fotico{
+    grid-area: foto2;
+}
+.fotico_foto{
+    width: 387px;
+    height: 950px;
+}
+
+/* Subtitulo */
+
+.subtitulo{
+    margin-top: 60px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 35px;
+    grid-area: titulo;
+}
+.subtitulo__texto{
+    background-color: cornflowerblue;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+/* Opiniones */
+
+.Opiniones{
+    width:  1000px;
+    height: 700px;
+    border: 3px rgb(117, 110, 110) solid;
+    margin: 0px 25px 25px ;
+    grid-area: esdla;
+}
+
+/* El señor de los anillos */
+
+.Esdla{
+    width:  950px;
+    height: 200px;
+    border: 3px rgb(117, 110, 110) solid;
+    margin: 25px;
+    display: flex;
+    background-color: rgb(45, 38, 80);
+}
+.Esdla__img{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+.Esdla__contenido{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.Esdla__titulo{
+    margin-top: 20px;
+}
+.Esdla__botoncito{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.Esdla__boton{
+    width: 45px;
+    background-color: cornflowerblue;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Esdla__boton:hover{
+    border: blueviolet 2px solid;
+    background-color: white;
+    color: blueviolet;
+
+}
+
+/* League of legends */
+
+.lol{
+    width:  950px;
+    height: 200px;
+    border: 3px rgb(117, 110, 110) solid;
+    margin: 25px;
+    display: flex;
+    background-color: rgb(45, 38, 80);
+}
+.lol__img{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+.lol__contenido{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.lol__titulo{
+    margin-top: 20px;
+}
+.lol__botoncito{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.lol__boton{
+    width: 45px;
+    background-color: cornflowerblue;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.lol__boton:hover{
+    border: blueviolet 2px solid;
+    background-color: white;
+    color: blueviolet;
+}
+
+/* Top juegos */
+
+.game{
+    width:  950px;
+    height: 200px;
+    border: 3px rgb(117, 110, 110) solid;
+    margin: 25px;
+    display: flex;
+    background-color: rgb(45, 38, 80);
+}
+.game__img{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+.game__contenido{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.game__titulo{
+    margin-top: 20px;
+}
+.game__botoncito{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.game__boton{
+    width: 45px;
+    background-color: cornflowerblue;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.game__boton:hover{
+    border: blueviolet 2px solid;
+    background-color: white;
+    color: blueviolet;
+}
+
+/* FINAL DE MAIN */
+
+
+/* FOOTER */
+
+.piedepagina{
+    height: 140px;
+    background-color: #111111;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "logoo links"
+    "logoo mas";
+    border-top: black solid 5px;
+}
+.logo_contender{
+    grid-area: logoo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_footer{
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(53, 53, 53);
+    border: #202020 solid 4px;
+    display: flex;
+    justify-content: center;
+}
+.logo_nombre_footer{
+    color: rgb(69, 156, 228);
+    font-size: 5rem;
+}
+.otros_links{
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+}
+.otros_links_texto{
+    color: rgb(34, 80, 178);
+    font-size: 3rem;
+}
+.links{
+    grid-area: mas;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.links_texto{
+    color: rgb(207, 204, 204);
+    font-size: 2rem;
+}
+
+/* FIN DEL INDEX */
+
+/* Comienzo Contacto */
+
+.main_contacto{
+    background-color: rgb(1, 4, 27);
+    margin-top: 110px;
+    color: white;
+    height: 100vh;
+}
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    padding: 16px 16px;
+    color: white;
+    font-size: 36px;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 16px;
+    align-content: center;
+}
+.titulo-recibir_noticias{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 8px;
+}
+.botones{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.contacto-label{
+    font-size: 24px;
+    color: white;
+}
+
+/* Fin Contacto */
+
+/* PAGINA ESDLA comienzo*/
+
+.main_esdla{
+    margin-top: 110px;
+    background-color: rgb(4, 1, 43);
+    height: 1200px;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor";
+}
+.menciones{
+    grid-area: honor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-content: space-between;
+}
+.menciones_caja{
+    width: 70%;
+    border: white 4px solid;
+
+}
+.aragorn_imagen{
+    width: 90%;
+}
+.boromir_imagen{
+    width: 90%;
+}
+.glorfindel_imagen{
+    width: 90%;
+    height: 400px;
+}
+.informacion{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    color: white;
+}
+.comunidad{
+    width: 300px;
+    height: 200px;
+}
+.comunidad-1{
+    width: 300px;
+    height: 200px;
+}
+.rohirrim{
+    width: 300px;
+    height: 200px;
+}
+
+/* FIN pagina esdla */
+
+/* Comienzo pagina juegos */
+
+.main_juegos{
+    margin-top: 110px;
+    background-color: rgb(4, 1, 43);
+    height: 1200px;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor";
+}
+.fotog{
+    width: 200px;
+    height: 150px;
+}
+.imgg{
+    width: 100%;
+}
+
+/* FIN pagina juegos */
+
+/* Comienzo pagina lol */
+
+.main_lol{
+    margin-top: 110px;
+    background-color: rgb(4, 1, 43);
+    height: 1200px;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor";
+}
+.imgi{
+    width: 200px;
+    height: 150px;
+}
+.imgm{
+    width: 100%;
+}
