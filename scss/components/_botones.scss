@@ -1,0 +1,19 @@
+.Esdla__botoncito{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    }
+
+    .Esdla__boton{
+        width: 5%;
+        background-color: cornflowerblue;
+        padding: 15px 20px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        &:hover{
+            border: blueviolet 2px solid;
+            background-color: white;
+            color: blueviolet;
+        }
+    }

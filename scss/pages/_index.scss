@@ -1,0 +1,75 @@
+.elcampito{
+    background-color: rgb(4, 1, 43);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "foto1 titulo titulo foto2"
+    "foto1 esdla esdla foto2"
+    "foto1 esdla esdla foto2"
+    "foto1 esdla esdla foto2";
+}
+
+/* Subtitulo */
+
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: titulo;
+    &__texto{
+        background-color: cornflowerblue;
+        padding: 15px 20px;
+        border-radius: 20px;
+    }
+}
+
+/* fotos */
+
+.fotito{
+    grid-area: foto1;
+}
+.fotico{
+    grid-area: foto2;
+}
+
+/* Opiniones */
+
+
+
+.Opiniones{
+    border: 3px rgb(117, 110, 110) solid;
+    margin: 0px 0px 25px ;
+    grid-area: esdla;
+    display: flex;
+    flex-flow: wrap row;
+
+    .Esdla{
+        border: 3px rgb(117, 110, 110) solid;
+        background-color: rgb(45, 38, 80);
+        margin: 25px;
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+        justify-content: center;
+        &__img{
+            grid-area: fto;
+            width: 10vw;
+            height: 20vh;
+            margin: 10px 0px 10px 20px;
+        }
+        &__contenido{
+            grid-area: texto;
+            display: flex;
+            flex-flow: column;
+            align-content: space-between;
+            padding: 20px;
+            .Esdla__titulo{
+                margin-top: 20px;
+            }
+        }
+
+    }
+}
+

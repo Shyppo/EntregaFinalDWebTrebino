@@ -1,0 +1,104 @@
+@media (min-width: 768px){
+    .main_esdla{
+    display:grid;
+    grid-template-columns: 70% 29%;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    grid-template-areas: 
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor"
+    "texto honor";
+    }
+}
+
+    @media (width: 767px ){
+        .main_esdla{
+        display:grid;
+        grid-template-columns: 70% 29%;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+        grid-template-areas: 
+        "texto"
+        "texto"
+        "texto"
+        "honor"
+        "honor"
+        "honor";
+        }
+    }
+    
+.main_esdla{
+    background-color: rgb(4, 1, 43);
+    padding-top: 20px;
+    
+    
+    .menciones{
+        grid-area: honor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        &_caja{
+            width: 75%;
+            border: rgb(51, 38, 63) 4px solid;
+            margin-bottom: 20px;
+            padding: 15px;
+            display: flex;
+            flex-flow: wrap column;
+            .aragorn_imagen{
+                width: 90%;
+            }
+            .boromir_imagen{
+                width: 90%;
+            }
+            .glorfindel_imagen{
+                width: 90%;
+                height: 60%;
+            }
+            .separar{
+                margin-top: 10px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            }
+        }
+    }
+
+
+    .informacion{
+        grid-area: texto;
+        color: white;
+        display: flex;
+        &_caja{
+            display: flex;
+            flex-flow: wrap row;
+            align-content: center;
+            justify-content: center;
+            .as{
+                margin-left: 15px;
+            }
+            .roto{
+                width: 60vw;
+                margin: 10px 0px 10px 0px;
+                padding: 10px;
+                border: rgb(51, 38, 63) 4px solid;
+                background-color: rgb(15, 65, 99);
+                .imagenes{
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: start;
+                    padding-left: 30%;
+                    .comunidad{
+                        border: rgb(51, 38, 63) 4px solid;
+                        width: 20vw;
+                        height: 30vh;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,338 +1,308 @@
 /* Reseteo */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-/* COMIENZO DE INDEX */
 
-/* Header */
-
-.lacueva_top_menu{
-    background-color: #888f2b;
-    border: #a7b123 solid 2px bottom;
-    width: 100%;
-}
-.lacueva_subheader {
-    background-color: #000000;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.social .icon{
-    width: 25px;
-    height: 25px;
-    margin: 0 7px;
-}
-.lacueva_header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: #360707 solid 7px;
-}
-.logo{
-    background-color: rgb(121, 141, 60);
-    border: #111111 solid 4px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-.logo_nombre{
-    color: rgb(0, 81, 148);
-    font-size: 3rem;
-}
-/* Fin del Header */
-
-/* Comienzo del Main */
-
-.elcampito{
-    background-color: rgb(4, 1, 43);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    gap: 20px;
-    grid-template-areas: 
-    "foto1 titulo titulo foto2"
-    "foto1 esdla esdla foto2"
-    "foto1 esdla esdla foto2"
-    "foto1 esdla esdla foto2";
+.elcampito {
+  background-color: rgb(4, 1, 43);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas: "foto1 titulo titulo foto2" "foto1 esdla esdla foto2" "foto1 esdla esdla foto2" "foto1 esdla esdla foto2";
 }
 
 /* Subtitulo */
-
-.subtitulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-area: titulo;
+.subtitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: titulo;
 }
-.subtitulo__texto{
-    background-color: cornflowerblue;
-    padding: 15px 20px;
-    border-radius: 20px;
+.subtitulo__texto {
+  background-color: cornflowerblue;
+  padding: 15px 20px;
+  border-radius: 20px;
 }
 
 /* fotos */
-
-.fotito{
-    grid-area: foto1;
+.fotito {
+  grid-area: foto1;
 }
-.fotico{
-    grid-area: foto2;
+
+.fotico {
+  grid-area: foto2;
 }
 
 /* Opiniones */
+.Opiniones {
+  border: 3px rgb(117, 110, 110) solid;
+  margin: 0px 0px 25px;
+  grid-area: esdla;
+  display: flex;
+  flex-flow: wrap row;
+}
+.Opiniones .Esdla {
+  border: 3px rgb(117, 110, 110) solid;
+  background-color: rgb(45, 38, 80);
+  margin: 25px;
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+}
+.Opiniones .Esdla__img {
+  grid-area: fto;
+  width: 10vw;
+  height: 20vh;
+  margin: 10px 0px 10px 20px;
+}
+.Opiniones .Esdla__contenido {
+  grid-area: texto;
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+  padding: 20px;
+}
+.Opiniones .Esdla__contenido .Esdla__titulo {
+  margin-top: 20px;
+}
 
-.Opiniones{
-    border: 3px rgb(117, 110, 110) solid;
-    margin: 0px 0px 25px ;
-    grid-area: esdla;
-    display: flex;
-    flex-flow: wrap row;
-}
-.Esdla{
-    border: 3px rgb(117, 110, 110) solid;
-    background-color: rgb(45, 38, 80);
-    margin: 25px;
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
-    justify-content: center;
-}
-@media (min-width: 865px){
-.Esdla{
+@media (min-width: 768px) {
+  .main_esdla {
     display: grid;
-    grid-template-columns: 10%, 90%;
-    grid-template-rows: (2,1fr);
-    gap: 20px;
-    grid-template-areas: 
-    "fto texto"
-    "fto texto";}
-}
-.Esdla__img{
-    grid-area: fto;
-    width: 10vw;
-    height: 20vh;
-    margin: 10px 0px 10px 20px;
-}
-.Esdla__contenido{
-    grid-area: texto;
-    display: flex;
-    flex-flow: column;
-    align-content: space-between;
-    padding: 20px;
-}
-.Esdla__titulo{
-    margin-top: 20px;
-}
-.Esdla__botoncito{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
-}
-.Esdla__boton{
-    width: 5%;
-    background-color: cornflowerblue;
-    padding: 15px 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-}
-.Esdla__boton:hover{
-    border: blueviolet 2px solid;
-    background-color: white;
-    color: blueviolet;
-
-}
-
-/* FINAL DE MAIN */
-
-
-/* FOOTER */
-
-.piedepagina{
-    background-color: #111111;
-    border-top: black solid 5px;
-}
-@media (min-width: 865px){
-    .piedepagina{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "logoo links"
-    "logoo mas";}
-}
-.logo_contender{
-    grid-area: logoo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo_footer{
-    width: 90%;
-    background-color: rgb(53, 53, 53);
-    border: #202020 solid 4px;
-    display: flex;
-    justify-content: center;
-}
-.logo_nombre_footer{
-    color: rgb(69, 156, 228);
-    font-size: 5rem;
-}
-.otros_links{
-    grid-area: links;
-    display: flex;
-    justify-content: center;
-}
-.otros_links_texto{
-    color: rgb(34, 80, 178);
-    font-size: 3rem;
-}
-.links{
-    grid-area: mas;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-.links_texto{
-    color: rgb(207, 204, 204);
-    font-size: 2rem;
-}
-
-/* FIN DEL INDEX */
-
-/* Comienzo Contacto */
-
-.main_contacto{
-    background-color: rgb(1, 4, 27);
-    color: white;
-    height: 100vh;
-}
-.titulo-formulario{
-    display: flex;
-    justify-content: center;
-    padding: 16px 16px;
-    color: white;
-    font-size: 36px;
-}
-.contacto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-left: 16px;
-    align-content: center;
-}
-.titulo-recibir_noticias{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-bottom: 8px;
-}
-.botones{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-}
-.contacto-label{
-    font-size: 24px;
-    color: white;
-}
-
-/* Fin Contacto */
-
-/* PAGINA ESDLA comienzo*/
-
-.main_esdla{
-    background-color: rgb(4, 1, 43);
-    padding-top: 20px;
-}
-
-@media (min-width: 768px){
-    .main_esdla{
-    display:grid;
     grid-template-columns: 70% 29%;
     grid-template-rows: repeat(6, 1fr);
     gap: 5px;
-    grid-template-areas: 
-    "texto honor"
-    "texto honor"
-    "texto honor"
-    "texto honor"
-    "texto honor"
-    "texto honor";
-    }
+    grid-template-areas: "texto honor" "texto honor" "texto honor" "texto honor" "texto honor" "texto honor";
+  }
 }
-.menciones{
-    grid-area: honor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+@media (width: 767px) {
+  .main_esdla {
+    display: grid;
+    grid-template-columns: 70% 29%;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    grid-template-areas: "texto" "texto" "texto" "honor" "honor" "honor";
+  }
 }
-.menciones_caja{
-    width: 75%;
-    border: rgb(51, 38, 63) 4px solid;
-    margin-bottom: 20px;
-    padding: 15px;
-    display: flex;
-    flex-flow: wrap column;
+.main_esdla {
+  background-color: rgb(4, 1, 43);
+  padding-top: 20px;
 }
-.aragorn_imagen{
-    width: 90%;
+.main_esdla .menciones {
+  grid-area: honor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-.boromir_imagen{
-    width: 90%;
+.main_esdla .menciones_caja {
+  width: 75%;
+  border: rgb(51, 38, 63) 4px solid;
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  flex-flow: wrap column;
 }
-.glorfindel_imagen{
-    width: 90%;
-    height: 60%;
+.main_esdla .menciones_caja .aragorn_imagen {
+  width: 90%;
 }
-.separar{
-    margin-top: 10px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.main_esdla .menciones_caja .boromir_imagen {
+  width: 90%;
 }
-.informacion{
-    grid-area: texto;
-    color: white;
-    display: flex;
+.main_esdla .menciones_caja .glorfindel_imagen {
+  width: 90%;
+  height: 60%;
 }
-.informacion_caja{
-    display: flex;
-    flex-flow: wrap row;
-    align-content: center;
-    justify-content: center;
+.main_esdla .menciones_caja .separar {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
-.as{
-    margin-left: 15px;
+.main_esdla .informacion {
+  grid-area: texto;
+  color: white;
+  display: flex;
 }
-.roto{
-    width: 60vw;
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
-    border: rgb(51, 38, 63) 4px solid;
-    background-color: rgb(15, 65, 99);
+.main_esdla .informacion_caja {
+  display: flex;
+  flex-flow: wrap row;
+  align-content: center;
+  justify-content: center;
 }
-.comunidad{
-    border: rgb(51, 38, 63) 4px solid;
-    width: 20vw;
-    height: 30vh;
+.main_esdla .informacion_caja .as {
+  margin-left: 15px;
 }
-.imagenes{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: start;
-    padding-left: 30%;
+.main_esdla .informacion_caja .roto {
+  width: 60vw;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border: rgb(51, 38, 63) 4px solid;
+  background-color: rgb(15, 65, 99);
 }
-/* FIN pagina esdla */
+.main_esdla .informacion_caja .roto .imagenes {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: start;
+  padding-left: 30%;
+}
+.main_esdla .informacion_caja .roto .imagenes .comunidad {
+  border: rgb(51, 38, 63) 4px solid;
+  width: 20vw;
+  height: 30vh;
+}
+
+.main_contacto {
+  background-color: rgb(1, 4, 27);
+  color: white;
+  height: 100vh;
+}
+.main_contacto .titulo-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 16px 16px;
+  color: white;
+  font-size: 36px;
+}
+.main_contacto .contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 16px;
+  align-content: center;
+}
+.main_contacto .contacto-label {
+  font-size: 24px;
+  color: white;
+}
+.main_contacto .contacto .titulo-recibir_noticias {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 8px;
+}
+.main_contacto .contacto .titulo-recibir_noticias .botones {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 865px) {
+  .piedepagina {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logoo links" "logoo mas";
+  }
+}
+.piedepagina {
+  background-color: #111111;
+  border-top: black solid 5px;
+}
+.piedepagina .logo_contender {
+  grid-area: logoo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.piedepagina .logo_contender .logo_footer {
+  width: 90%;
+  background-color: rgb(53, 53, 53);
+  border: #202020 solid 4px;
+  display: flex;
+  justify-content: center;
+}
+.piedepagina .logo_contender .logo_footer .logo_nombre_footer {
+  color: rgb(69, 156, 228);
+  font-size: 5rem;
+}
+.piedepagina .otros_links {
+  grid-area: links;
+  display: flex;
+  justify-content: center;
+}
+.piedepagina .otros_links_texto {
+  color: rgb(34, 80, 178);
+  font-size: 3rem;
+}
+.piedepagina .links {
+  grid-area: mas;
+  display: flex;
+  justify-content: space-evenly;
+}
+.piedepagina .links_texto {
+  color: rgb(207, 204, 204);
+  font-size: 2rem;
+}
+
+/* Header */
+.lacueva_top_menu {
+  background-color: #888f2b;
+  border: #a7b123 solid 2px bottom;
+  width: 100%;
+}
+.lacueva_top_menu .lacueva_subheader {
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lacueva_top_menu .lacueva_subheader .social .icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 7px;
+}
+.lacueva_top_menu .lacueva_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: #360707 solid 7px;
+}
+.lacueva_top_menu .lacueva_header .logo {
+  background-color: rgb(121, 141, 60);
+  border: #111111 solid 4px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.lacueva_top_menu .lacueva_header .logo .logo_nombre {
+  color: rgb(0, 81, 148);
+  font-size: 3rem;
+}
+
+/* Fin del Header */
+.Esdla__botoncito {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.Esdla__boton {
+  width: 5%;
+  background-color: cornflowerblue;
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.Esdla__boton:hover {
+  border: blueviolet 2px solid;
+  background-color: white;
+  color: blueviolet;
+}
+
+/*# sourceMappingURL=styles.css.map */

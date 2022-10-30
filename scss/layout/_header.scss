@@ -1,0 +1,40 @@
+/* Header */
+
+.lacueva_top_menu{
+    background-color: #888f2b;
+    border: #a7b123 solid 2px bottom;
+    width: 100%;
+    .lacueva_subheader {
+        background-color: #000000;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .social .icon{
+            width: 25px;
+            height: 25px;
+            margin: 0 7px;
+        }
+    }
+    .lacueva_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: #360707 solid 7px;
+        .logo{
+            background-color: rgb(121, 141, 60);
+            border: #111111 solid 4px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            .logo_nombre{
+                color: rgb(0, 81, 148);
+                font-size: 3rem;
+            }
+        }
+    }
+}
+/* Fin del Header */
